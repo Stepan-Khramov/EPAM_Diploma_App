@@ -44,7 +44,11 @@ def main():
         <title>Python generated HTML</title>
         </head>
         <body>
-        <td><a href="/index.html">Home</td>
+        <div class="nav">
+                <p></p>
+                <!-- <a href="/index.html">Home
+                <p></p>
+              </div>
         <table>'''
     html_ending = '''
         </table>
