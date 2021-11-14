@@ -44,7 +44,7 @@ def main():
         <title>Python generated HTML</title>
         </head>
         <body>
-        <a href="/index.html">Home
+        <td><a href="/index.html">Home</td>
         <table>'''
     html_ending = '''
         </table>
