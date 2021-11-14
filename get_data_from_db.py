@@ -56,6 +56,8 @@ def main():
             html_file.writelines('\t\t' + str(line).strip("['']") + '\n')
         html_file.writelines(html_ending)
 
+    webbrowser.open(html_filename)
+
     #===== Closing connection to SQL DB.
     cursor.close()
     db_conn.close()
