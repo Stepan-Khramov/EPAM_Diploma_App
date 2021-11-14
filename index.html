@@ -96,10 +96,26 @@
             <div class="nav">
                 <p></p>
                 <h3>
-                <a href="/index.html">Home
+                <!-- <a href="/index.html">Home
                 <input type="button" id='script' name="scriptbutton" value=" Get data from source " onclick="exec('python get_data_from_db.py');">
                 <input type="button" id='script' name="scriptbutton" value=" Generate data.html " onclick="exec('python get_data_from_db.py');">
-                <a href="/data.html">Display data
+                <a href="/data.html">Display data -->
+
+                <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
+
+                <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            
+                <script>
+                    function goPython(){
+                        $.ajax({
+                            url: "get_data_from_db.py",
+                            context: document.body
+                        }).done(function() {
+                            alert('finished python script');;
+                        });
+                    }
+                </script>
+
                 </h3>
                 <p></p>
               </div>
