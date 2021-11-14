@@ -44,6 +44,7 @@ def main():
         <title>Python generated HTML</title>
         </head>
         <body>
+        <a href="/index.html">Home
         <table>'''
     html_ending = '''
         </table>
@@ -55,8 +56,6 @@ def main():
         for line in result:
             html_file.writelines('\t\t' + str(line).strip("['']") + '\n')
         html_file.writelines(html_ending)
-
-    webbrowser.open(html_filename)
 
     #===== Closing connection to SQL DB.
     cursor.close()
