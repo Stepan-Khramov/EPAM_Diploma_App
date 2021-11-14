@@ -44,14 +44,10 @@ def main():
         <title>Python generated HTML</title>
         </head>
         <body>
-        <div class="nav">
-                <p></p>
-                <!-- <a href="/index.html">Home
-                <p></p>
+        <a href="/index.html">Home
         <table>'''
     html_ending = '''
         </table>
-            </div>
         </body>
         </html>'''
 
