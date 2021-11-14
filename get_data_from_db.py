@@ -48,10 +48,10 @@ def main():
                 <p></p>
                 <!-- <a href="/index.html">Home
                 <p></p>
-              </div>
         <table>'''
     html_ending = '''
         </table>
+            </div>
         </body>
         </html>'''
 
