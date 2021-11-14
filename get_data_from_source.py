@@ -50,7 +50,7 @@ def main():
 
     #===== Connect to SQL DB.
     try:
-        conn = mariadb.connect(
+        db_conn = mariadb.connect(
             user="stepan",
             password="stepan",
             host="192.168.10.66",
@@ -65,7 +65,7 @@ def main():
     #===== End of Connect to SQL DB.
 
     #===== Working with SQL DB.
-    cursor = conn.cursor()
+    cursor = db_conn.cursor()
     # print(cursor)
     
     #===== Create table.
@@ -81,13 +81,14 @@ def main():
         except mariadb.Error as mariadb_error: 
             print("MariaDB error: " + str(mariadb_error))
 
-    conn.commit()
+    db_conn.commit()
     print("Last Inserted ID: " + str(cursor.lastrowid))
 
     #===== End of Working with SQL DB.
 
     #===== Closing connection to SQL DB.
-    conn.close()
+    cursor.close()
+    db_conn.close()
 
 if __name__ =='__main__':
     main()
