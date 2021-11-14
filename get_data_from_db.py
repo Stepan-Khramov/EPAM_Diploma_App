@@ -8,7 +8,7 @@ def main():
     db_command = "SELECT * FROM current_year;"
     buffer = []
     result = []
-    table_head = "<tr><td>DATE</td><td>COUNTRY</td><td>CONFIRMED</td><td>deaths</td><td>stringency_actual</td><td>stringency</td></tr>"
+    table_head = "<tr><td>##</td><td>DATE</td><td>COUNTRY</td><td>CONFIRMED</td><td>deaths</td><td>stringency_actual</td><td>stringency</td></tr>"
     #0000:{'date_value': '2021-01-01', 'country_code': 'AFG', 'confirmed': 52513, 'deaths': 2201, 'stringency_actual': 12.04, 'stringency': 12.04, 'stringency_legacy': 20.24, 'stringency_legacy_disp': 20.24}
     html_filename = 'data.html'
    
