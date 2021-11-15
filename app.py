@@ -134,7 +134,8 @@ def put_data_from_db_to_html():
         <title>Python generated HTML</title>
         </head>
         <body>
-        <a href="/index">Home
+        <a href="/index">Home</a>
+        <a href="/data">Renew</a>
         <table>'''
     html_ending = '''
         </table>
