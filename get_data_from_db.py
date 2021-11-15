@@ -57,6 +57,12 @@ def main():
             html_file.writelines('\t\t' + str(line).strip("['']") + '\n')
         html_file.writelines(html_ending)
 
+    # for line in result:
+    #     html_beginning = html_beginning + line
+    # html_beginning = html_beginning + html_ending
+    # print(html_beginning)
+
+
     #===== Closing connection to SQL DB.
     cursor.close()
     db_conn.close()
