@@ -56,9 +56,9 @@ def put_data_to_db():
             # user="stepan",
             # password="stepan",
             # host="192.168.10.66",
-            user=os.environ.db_user,
-            password=os.environ.db_pass,
-            host=os.environ.db_host,
+            user=os.environ.get('db_user'),
+            password=os.environ.get('db_pass'),
+            host=os.environ.get('db_host'),
             port=3306,
             database="covid_tracker"
 
@@ -110,9 +110,9 @@ def put_data_from_db_to_html():
             # user="stepan",
             # password="stepan",
             # host="192.168.10.66",
-            user=os.environ.db_user,
-            password=os.environ.db_pass,
-            host=os.environ.db_host,
+            user=os.environ.get('db_user'),
+            password=os.environ.get('db_pass'),
+            host=os.environ.get('db_host'),
             port=3306,
             database="covid_tracker"
 
