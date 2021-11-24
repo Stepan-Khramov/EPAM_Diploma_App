@@ -105,9 +105,6 @@ def put_data_from_db_to_html():
     html_filename = 'data.html'
    
     #===== Connect to SQL DB.
-    print(os.environ.get('db_user'))
-    print(os.environ.get('db_pass'))
-    print(os.environ.get('db_host'))
     try:
         db_conn = mariadb.connect(
             # user="stepan",
@@ -190,8 +187,8 @@ def data():
 
 
 if __name__ == '__main__':
-    print(os.environ.get('db_user'))
-    print(os.environ.get('db_pass'))
-    print(os.environ.get('db_host'))
+    # print(os.environ.get('db_user'))
+    # print(os.environ.get('db_pass'))
+    # print(os.environ.get('db_host'))
     app.run(debug = False, host="0.0.0.0", port=80)
     # app.run()
