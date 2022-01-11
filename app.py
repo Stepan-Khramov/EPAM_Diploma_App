@@ -9,7 +9,7 @@ def get_data(date_from, date_to):
 
     cookies = ''
     status_code = ''
-    req_timeout = 5 # Seconds
+    req_timeout = 15 # Seconds
     login_timeout = 5 # Seconds
 
     ### Login to phone. Get J100 cookies
